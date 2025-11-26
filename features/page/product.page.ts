@@ -1,15 +1,30 @@
 class ProductPage {
-  get productsTitle() { return $('~test-PRODUCTS'); }
 
+  // ===== ELEMENTS =====
+  get title() { 
+    return $('~test-Cart'); 
+  }
+
+  get productList() { 
+    return $$('//*[@content-desc="test-Item"]'); 
+  }
+
+  // Product by name (flexible dan bisa dipakai ulang)
+  productCard(name: string) {
+    return $(`//*[@content-desc="test-Item"]//*[contains(@text, "${name}")]`);
+  }
+
+  // ===== ACTIONS =====
   async isDisplayed() {
-    await expect(this.productsTitle).toBeDisplayed();
+    await this.title.waitForDisplayed({ timeout: 15000 });
   }
 
   async openProduct(productName: string) {
-    //await $('~test-LOGIN').waitForDisplayed({ reverse: true, timeout: 10000 });
-    const product = await $(`//*[@content-desc="test-Item title" and @text="${productName}"]`);
+    const product = this.productCard(productName);
+    await product.waitForDisplayed({ timeout: 10000 });
     await product.click();
   }
 }
+
 export default new ProductPage();
 

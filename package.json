@@ -1,5 +1,5 @@
 {
-  "name": "mobile-automationnew",
+  "name": "brightonandroid",
   "type": "module",
   "version": "1.0.0",
   "description": "Mobile automation testing using WebdriverIO, Appium, TypeScript, and Cucumber",

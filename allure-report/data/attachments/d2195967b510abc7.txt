@@ -1,1 +1,0 @@
-stale element reference: WebDriverError: The referenced element is no longer attached to the DOM when running "element/00000000-0000-0079-ffff-ffff000000d2/click" with method "POST"

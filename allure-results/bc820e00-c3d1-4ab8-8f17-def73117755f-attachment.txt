@@ -1,3 +1,0 @@
-.........Console Logs.........
-
-Available contexts: [ [32m'NATIVE_APP'[39m ]

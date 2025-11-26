@@ -14,11 +14,13 @@
       "node",
       "expect-webdriverio"
     ],
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "baseUrl": "."
   },
   "include": [
     "./features/**/*.ts",
-    "./wdio.conf.ts"
+    "./wdio.conf.ts",
+    "./src/**/*.ts" 
   ]
 }
 

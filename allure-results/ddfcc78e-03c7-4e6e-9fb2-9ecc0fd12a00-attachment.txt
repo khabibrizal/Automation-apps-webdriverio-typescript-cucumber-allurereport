@@ -1,2 +1,0 @@
-invalid selector: WebDriverError: Could not parse selector expression `new UiScrollable(new UiSelector().scrollable(true))
-      .scrollIntoView(new UiSelector().text("ADD TO CART"))`: Expected "." at position 51 when running "element" with method "POST" and args "{"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true))\n      .scrollIntoView(new UiSelector().text(\"ADD TO CART\"))"}"

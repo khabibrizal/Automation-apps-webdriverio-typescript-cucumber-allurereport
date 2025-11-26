@@ -1,1 +1,0 @@
-stale element reference: WebDriverError: The element 'By.AndroidUiAutomator: new UiSelector().text("ADD TO CART")' does not exist in DOM anymore when running "element/00000000-0000-00f4-ffff-ffff0000005f/displayed" with method "GET"

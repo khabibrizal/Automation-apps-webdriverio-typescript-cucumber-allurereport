@@ -1,15 +1,15 @@
-Feature: Login to Application
-
+Feature: Login Feature
   As a user
-  I want to login to the application
+  I want to login into the application
   So that I can access my dashboard
 
+  @login @smoke
   Scenario: Successful login with valid credentials
-    Given I am on the login page
-    When I enter valid username and password
-    And I click the login button
-    Then I should see the dashboard page
-    And I click one of them product "Sauce Labs Backpack"
-    Then I should see the detail product page
-    And I click the add to cart button
-    Then I should see add to cart button change to remove button
+    Given saya berada di halaman home
+    And saya click icon people
+    Then saya berada di halaman login
+    When saya masukkan email "khabibfahrurrizal@gmail.com"
+    And saya masukkan sandi "P@ssw0rd2025"
+    And saya click masuk button
+    And menampilkan pop up banner di halaman home user
+    When saya click button x  
